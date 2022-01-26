@@ -12,7 +12,7 @@ public class Customer {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Integer id;
 	private String name;
-	private boolean gender;
+	private String gender;
 	private int pinCode;
 	
 	
@@ -28,10 +28,10 @@ public class Customer {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public boolean isGender() {
+	public String isGender() {
 		return gender;
 	}
-	public void setGender(boolean gender) {
+	public void setGender(String gender) {
 		this.gender = gender;
 	}
 	public int getPinCode() {
