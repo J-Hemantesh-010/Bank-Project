@@ -11,7 +11,7 @@ import com.example.demo.services.BankService;
 public class Controller {
 	@Autowired
 	BankService customerService;
-	@PostMapping("/user")
+	@PostMapping("/newCustomer")
 	void addCustomer(@RequestBody Customer newCustomer)
 	{
 		customerService.createCustomer(newCustomer);
